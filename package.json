@@ -1,0 +1,33 @@
+{
+    "name": "lab",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@codeceptjs/allure-legacy": "^1.0.2",
+        "@codeceptjs/configure": "^1.0.1",
+        "@codeceptjs/examples": "^1.2.4",
+        "@codeceptjs/helper": "^2.0.4",
+        "@codeceptjs/ui": "^1.2.0",
+        "@types/node": "^22.5.4",
+        "codeceptjs": "^3.6.5",
+        "playwright": "^1.47.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "groq-sdk": "^0.7.0",
+        "openai": "^4.58.2"
+    },
+    "description": ""
+}
